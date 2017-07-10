@@ -1,0 +1,27 @@
+{
+  "name": "messages",
+  "version": "1.0.0",
+  "description": "Messaging application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/101stArrow/messages.git"
+  },
+  "author": "Eric Muir & Kale Champagnie",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/101stArrow/messages/issues"
+  },
+  "homepage": "https://github.com/101stArrow/messages#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "lowdb": "^0.16.2",
+    "morgan": "^1.8.2",
+    "socket.io": "^2.0.3"
+  }
+}
