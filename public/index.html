@@ -1,29 +1,42 @@
 <!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Messages</title>
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/style/main.css">
-
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js'></script>
-
-    <!-- Angular -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.11/ngStorage.min.js'></script>
-
-    <!-- Custom Scripts -->
-    <script src="/scripts/core.js"></script>
-</head>
-<body ng-app="messages">
-  <ng-view></ng-view>
-</body>
+<html lang='en'>
+    <head>
+        <title>Chirp</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+        <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js'></script>
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.11/ngStorage.min.js'></script>
+        <script src='/scripts/core.js'></script>
+        <!-- <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'> -->
+        <link href='https://fonts.googleapis.com/css?family=Biryani:900' rel='stylesheet'>
+        <link rel='stylesheet' href='/style/style.css'>
+    </head>
+    <body ng-app='Chirp'>
+            <div class='view' id='start'>
+                <h1>Create or join a chat room</h1>
+                <input class='button' id='create' type='button' value='create'>
+                <input class='button' id='join' type='button' value='join'>
+            </div>
+            <div class='view' id='create'>
+                <h1>Create a room</h1>
+                <!-- add this when rooms are implemented -->
+            </div>
+            <div class='view' id='join'>
+                <h1>Join a room</h1>
+                <input class='textbox' id='user' placeholder='your name' ng-model='user'>
+                <input class='textbox' id='room' placeholder='room name' ng-model='room'>
+            </div>
+            <div class='view' id='chat'>
+                <ul id='messages'>
+                    
+                </ul>
+                <input class='textbox' id='message' placeholder='new message' ng-model='message'>
+            </div>
+    </body>
 </html>

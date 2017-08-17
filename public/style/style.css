@@ -1,0 +1,40 @@
+.view {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+h1 {
+	color: white;
+	font-family: Biryani;
+	font-size: 50pt;
+	font-weight: 100;
+	position: relative;
+	top: 10px;
+}
+
+.button {
+	background-color: transparent;
+	border: solid 10px white;
+	border-radius: 20px;
+	color: white;
+	font-family: Biryani;
+	font-size: 30pt;
+	height: 100px;
+	margin: 0 20px;
+	min-width: 300px;
+	outline: none;
+	transition: 0.3s;
+}
+
+#start {
+	background-color: #05e6b2;
+	text-align: center;
+}
+
+#start .button:hover {
+	background-color: white;
+	color: #05e6b2;
+}
