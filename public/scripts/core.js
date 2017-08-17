@@ -1,5 +1,5 @@
 $(function() {
-	var Chirp = angular.module('Chirp'); //['ngRoute', 'ngStorage'])
+	var Chirp = angular.module('Chirp', []);
 	var socket = io();
 
 	$('.view').hide();       // \____ jQuery should be working but just isn't.
